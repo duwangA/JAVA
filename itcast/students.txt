@@ -1,0 +1,4 @@
+zhangsan	99	99	99	297	
+liba	85	72	78	235	
+wangwu	98	55	44	197	
+zhaoliu	10	10	15	35	
