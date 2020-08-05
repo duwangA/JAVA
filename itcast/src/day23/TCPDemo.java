@@ -1,16 +1,10 @@
 package day23;
 
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.logging.SocketHandler;
 
-//public class TCPDemo {
-//
-//}
 class TcpClient{
     public static void main(String[] args) throws Exception{
         Socket socket = new Socket("169.254.160.34"/*InetAddress.getByName("169.254.160.34")*/,8888);
