@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    静态工厂    -->
+    <bean id="airplane01" class="factory.StaticFac" factory-method="getAirPlane">
+<!--        可以为方法指定参数       -->
+        <constructor-arg name="pilot" value="库奇"></constructor-arg>
+    </bean>
+
+    <bean id="myFacBeanImple" class="factory.MyFacBeanImple">
+
+    </bean>
+</beans>

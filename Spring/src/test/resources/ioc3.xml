@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    数据库连接池作为单实例是最好的，一个项目一个连接池，连接池管理很多连接，连接从连接池中获取     -->
+<!--    可以让Spring帮我们创建连接池对象，好处是Spring创建的对象默认单例      -->
+<!--    这里连接的是本地的数据库        -->
+    <bean id="pooledDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="user" value="root"></property>
+        <property name="password" value="451263"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/javaweb?serverTimezone=UTC"></property>
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+    </bean>
+</beans>
